@@ -1,0 +1,97 @@
+/* General Body Styles */
+body {
+    background-color: #f8f5f0; /* Light background color for the body */
+    font-family: Arial, sans-serif; /* Clean and modern font */
+    margin: 0;
+    padding: 0;
+}
+
+/* Menu Container */
+.menu {
+    padding: 50px;
+    background-color: #ffffff; /* White background for menu */
+    max-width: 800px;
+    margin: 0 auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for depth */
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    box-sizing: border-box;
+}
+
+/* Menu Section Titles */
+.menu h2 {
+    color: #4c3c32; /* Dark brown color for headings */
+    text-align: left;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Menu Items */
+.menu-section {
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.menu-section h3 {
+    font-size: 18px;
+    color: #333; /* Dark color for item titles */
+    margin-bottom: 5px;
+}
+
+.menu-section p {
+    color: #666; /* Lighter gray for descriptions */
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+/* Order Button */
+.order-button {
+    display: inline-block;
+    padding: 12px 25px;
+    background-color: #4c3c32;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    font-size: 14px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.order-button:hover {
+    background-color: #6d4b3b; /* Darker shade on hover */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #4c3c32;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 600px) {
+    .menu {
+        padding: 20px;
+    }
+
+    .menu h2 {
+        font-size: 20px;
+    }
+
+    .menu-section h3 {
+        font-size: 16px;
+    }
+
+    .order-button {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+}
