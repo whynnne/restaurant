@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        footer {
+            background-color: #4c3c32;
+            color: #fff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-bottom: 20px;
+        }
+
+        .footer-content div {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .footer-content h3 {
+            margin-bottom: 10px;
+        }
+
+        .social-media a {
+            display: block;
+            color: #fff;
+            text-decoration: none;
+            margin: 5px 0;
+        }
+
+        .social-media a:hover {
+            text-decoration: #125688;
+        }
+
+        .newsletter input[type="email"] {
+            padding: 10px;
+            margin-right: 5px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .newsletter button {
+            padding: 10px 20px;
+            background-color: #e6a000;
+            border: none;
+            border-radius: 5px;
+            color: #fff;
+            cursor: pointer;
+        }
+
+        .newsletter button:hover {
+            background-color: #d18e00;
+        }
+
+        .footer-bottom p {
+            font-size: 0.9em;
+        }
+
+        /* FontAwesome Icon Styling */
+        .fa {
+            padding: 10px;
+            font-size: 30px;
+            width: 50px;
+            text-align: center;
+            text-decoration: none;
+            margin: 5px 2px;
+        }
+
+        .fa:hover {
+            opacity: 0.7;
+        }
+
+        .fa-facebook {
+            background: #3B5998;
+            color: white;
+        }
+
+        .fa-twitter {
+            background: #55ACEE;
+            color: white;
+        }
+
+        .fa-instagram {
+            background: #125688;
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero-image {
+            background-image: url('img/bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+        }
+
+        .hero-text h1 {
+            font-size: 75px;
+        }
+
+        .hero-text p {
+            font-size: 24px;
+        }
+
+        /* Featured Sections */
+        .featured-section {
+            position: relative;
+            background-image: url('img/bg.jpg'); /* Background photo will overlay the featured section */
+            background-size: cover;
+            background-position: center;
+            padding: 40px 0;
+        }
+
+        .row {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 20px;
+            align-items: center; /* Align items properly */
+        }
+
+        .column {
+            width: 32%;
+            position: relative;
+        }
+
+        .container {
+            position: relative;
+            overflow: hidden; /* Prevent image overflow */
+        }
+
+        .image {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            color: white;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .container:hover .overlay {
+            opacity: 1;
+        }
+
+        .text {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 24px;
+            text-align: center;
+        }
+
+        .btn {
+            background-color: #e6a000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #d18e00;
+        }
+
+        /* Header Styling */
+        header {
+            background-color: #4c3c32; /* Set background color for the header */
+            padding: 10px 20px; /* Adjust padding for header */
+            position: relative;
+        }
+
+        /* Logo Styling */
+        .logo img {
+            width: 120px; /* Make logo smaller */
+            height: auto;
+        }
+
+        /* Navigation Bar Styling */
+        nav {
+            display: flex;
+            justify-content: flex-end; /* Align navigation to the top right */
+            align-items: center;
+        }
+
+        /* Navigation Links Styling */
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <title>HAVEAN RESTAURANT</title>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/HaveanRestaurantlogo.jpg" alt="HAVEAN RESTAURANT Logo">
+            </div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-image">
+        <div class="hero-text">
+            <h1>HAVEAN RESTAURANT</h1>
+            <p>"Delight in Every Bite"</p>
+        </div>
+    </section>
+
+    <!-- Featured Sections -->
+    <div class="featured-section">
+        <div class="row">
+            <div class="column">
+                <div class="container">
+                    <img src="img/beef.jpg" alt="Beef Nilaga" class="image">
+                    <div class="overlay">
+                        <div class="text">SOUP <br><a href="menu.html#food"><button class="btn">SEE MENU</button></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="container">
+                    <img src="img/cheeeese.jpg" alt="Cheese Sticks" class="image">
+                    <div class="overlay">
+                        <div class="text">APPETIZER<br><a href="menu.html#ricemeals"><button class="btn">SEE MENU</button></a></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="container">
+                    <img src="img/Leche-Flan.jpg" alt="Leche Flan" class="image">
+                    <div class="overlay">
+                        <div class="text">DESSERTS <br><a href="menu.html#desserts"><button class="btn">SEE MENU</button></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="contact-infooter">
+                <h3>Contact Us</h3>
+                <p>HAVEAN RESTAURANT</p>
+                <p>Email: contact@haveanrestaurant.com</p>
+                <p>Phone: (02) 123-4567</p>
+            </div>
+
+            <div>
+                <h3>Follow Us</h3>
+                <a href="https://www.facebook.com/haveanrestaurant" target="_blank" class="fa fa-facebook"></a>
+                <a href="https://www.twitter.com/haveanrestaurant" target="_blank" class="fa fa-twitter"></a>
+                <a href="https://www.instagram.com/haveanrestaurant" target="_blank" class="fa fa-instagram"></a>
+            </div>
+
+            <div class="newsletter">
+                <h3>Stay in the loop with HAVEAN RESTAURANT!</h3>
+                <p>Sign up for our newsletter to get the latest updates, special offers, and more delivered straight to your inbox</p><br>
+                <form action="#" method="post">
+                    <input type="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Sign Up</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 HAVEAN RESTAURANT. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

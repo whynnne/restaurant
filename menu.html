@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu</title>
+    <style>
+        body {
+            background-color: #f8f5f0;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navigation Bar Styles */
+        nav {
+            background-color: #4c3c32;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            font-size: 16px;
+            margin: 0 20px;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #6d4b3b;
+            border-radius: 5px;
+        }
+
+        .menu {
+            padding: 50px;
+            border-radius: 10px;
+            background-color: #ffffff;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .menu h2 {
+            color: #4c3c32;
+            text-align: left;
+        }
+
+        .menu-section {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        .menu-section h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .menu-section p {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .menu-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+        }
+
+        .menu-item img {
+            width: 120px;
+            height: 120px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-left: 20px; /* Space between text and image */
+        }
+
+        .order-button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #4c3c32;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 14px;
+            text-decoration: none;
+        }
+
+        .order-button:hover {
+            background-color: #6d4b3b;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4c3c32;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+
+<!-- Navigation Bar -->
+<nav>
+    <a href="index.html">Home</a>
+    <a href="menu.html">Menu</a>
+    <a href="about.html">About</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<!-- Menu Section -->
+<section class="menu">
+    <h2>Appetizers</h2>
+    <div class="menu-section">
+        <div class="menu-item">
+            <div>
+                <h3>Cheesy Cheese Sticks - Php 100.00</h3>
+                <p>Description: Deep-fried snacks composed of sliced cheeses wrapped in spring roll wrapper.</p>
+                <a href="payment.html" class="order-button">Order Now</a>
+            </div>
+            <img src="img/cheeeese.jpg" alt="Cheesy Cheese Sticks">
+        </div>
+        
+        <div class="menu-item">
+            <div>
+                <h3>Deep Fried Kamote Fries - Php 100.00</h3>
+                <p>Description: Made from sweet potatoes (kamote) sliced into thin strips, fried until crispy and golden brown.</p>
+                <a href="payment.html" class="order-button">Order Now</a>
+            </div>
+            <img src="img/kamote.jpg" alt="Deep Fried Kamote Fries">
+        </div>
+        
+        <div class="menu-item">
+            <div>
+                <h3>Juicy Dynamite - Php 100.00</h3>
+                <p>Description: Green chili stuffed with cheese and savory meat, deep-fried until golden brown.</p>
+                <a href="payment.html" class="order-button">Order Now</a>
+            </div>
+            <img src="img/dynamite.jpg" alt="Juicy Dynamite">
+        </div>
+    </div>
+
+    <h2>Soup</h2>
+    <div class="menu-section">
+        <div class="menu-item">
+            <div>
+                <h3>Beefy Beef Nilaga - Php 350.00</h3>
+                <p>Description: A hearty dish with beef chunks simmered in clear broth with vegetables like potatoes, carrots, and leafy greens.</p>
+                <a href="payment.html" class="order-button">Order Now</a>
+            </div>
+            <img src="img/beef.jpg" alt="Beefy Beef Nilaga">
+        </div>
+        
+        <div class="menu-item">
+            <div>
+                <h3>Pork Sinigang - Php 250.00</h3>
+                <p>Description: A sour and savory Filipino soup made with pork, vegetables, and tamarind-based broth.</p>
+                <a href="payment.html" class="order-button">Order Now</a>
+            </div>
+            <img src="img/porksinigang.jpg" alt="Pork Sinigang">
+        </div>
+    </div>
+
+    <h2>Entree</h2>
+    <div class="menu-section">
+        <div class="menu-item">
+            <div>
+                <h3>Home-made Beef Kare Kare - Php 400.00</h3>
+                <p>Description: A thick, savory peanut stew made with oxtail, beef tripe, and assorted vegetables.</p>
+                <a href="payment.html" class="order-button">Order Now</a>
+            </div>
+            <img src="img/beef kare.jpg" alt="Home-made Beef Kare Kare">
+        </div>
+        
+        <div class="menu-item">
+            <div>
+                <h3>Tasty Chicken Inasal - Php 150.00</h3>
+                <p>Description: Filipino-style BBQ chicken flavored with vinegar, citrus juice, lemongrass, and achiote, grilled to perfection.</p>
+                <a href="payment.html" class="order-button">Order Now</a>
+            </div>
+            <img src="img/inasal.jpg" alt="Tasty Chicken Inasal">
+        </div>
+    </div>
+
+    <h2>Desserts</h2>
+    <div class="menu-section">
+        <div class="menu-item">
+            <div>
+                <h3>Icy Halo-halo - Php 100.00</h3>
+                <p>Description: A combination of shaved ice layered with tropical fruits, ice cream, and gelatin-based candies made from coconut water.</p>
+                <a href="payment.html" class="order-button">Order Now</a>
+            </div>
+            <img src="img/icy.jpg" alt="Icy Halo-halo">
+        </div>
+        
+        <div class="menu-item">
+            <div>
+                <h3>Classic Leche Flan - Php 100.00</h3>
+                <p>Description: A dessert made up of eggs and milk with a soft caramel on top, similar to crème caramel or caramel custard.</p>
+                <a href="payment.html" class="order-button">Order Now</a>
+            </div>
+            <img src="img/Leche-Flan.jpg" alt="Classic Leche Flan">
+        </div>
+        
+        <div class="menu-item">
+            <div>
+                <h3>Mais Con Yelo - Php 100.00</h3>
+                <p>Description: A shaved ice dessert from the Philippines with sweet corn, milk, and sugar.</p>
+                <a href="payment.html" class="order-button">Order Now</a>
+            </div>
+            <img src="img/mais.jpg" alt="Mais Con Yelo">
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer>
+    <p>&copy; 2024 HAVEAN RESTAURANT. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
